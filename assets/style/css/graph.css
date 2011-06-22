@@ -1,0 +1,17 @@
+#next{
+                float: right;
+                display: inline-block;
+                text-indent: -9999px;
+                background: url(../img/graph/graph_next.png) no-repeat;
+                height: 32px;
+                width: 32px;
+                margin-top: 10px;
+}
+#previous{
+                display: inline-block;
+                text-indent: -9999px;
+                background: url(../img/graph/graph_prev.png) no-repeat;
+                height: 32px;
+                width: 32px;
+                margin-top: 10px;
+}
