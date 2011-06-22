@@ -1,1 +1,1 @@
-## Develop Channel Graph Module !!
+# Develop Channel* [Website](https://github.com/jeroenvheel/Graph-Module-MCB)* Version: 0.*.0-dev## Team* [Jeroen van Heel](https://github.com/jeroenvheel)## Description## Installation## Upgrading## Bugs & Feature Requests## Thanks
