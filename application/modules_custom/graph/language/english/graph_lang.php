@@ -18,6 +18,7 @@ $lang['graph_previous'] = 'Previous';
 $lang['graph_btn_line'] = 'Line Chart';
 $lang['graph_btn_bar'] = 'Bar Chart';
 $lang['graph_btn_item'] = 'Items Chart';
+$lang['graph_btn_inventory'] = 'Inventory Chart';
 
 $lang['made_by'] = 'Created by :';
 $lang['made_by_users'] = 'Jeroenvheel and special thanks too Umefarooq';

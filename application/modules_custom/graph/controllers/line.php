@@ -138,7 +138,9 @@ class Line extends Admin_Controller {
 		if ($this->input->post('item_Chart')) {
 			redirect('graph/items');
 		}
-
+		if ($this->input->post('inventory_Chart')) {
+			redirect('graph/inventory');
+		}
 	}
 
 	function _custom_save() {

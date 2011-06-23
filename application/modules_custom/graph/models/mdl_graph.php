@@ -191,12 +191,12 @@ class Mdl_Graph extends MY_Model {
 
 			//SELECT
 			$this->db->select('COUNT(mcb_inventory.inventory_id) AS sold_amount' ,FALSE);
-			$this->db->select('mcb_inventory.inventory_id' ,FALSE);
-			$this->db->select('mcb_inventory.inventory_name' ,FALSE);
-			$this->db->select('mcb_inventory.inventory_unit_price' ,FALSE);
+			$this->db->select('mcb_inventory.inventory_id AS inventory_id' ,FALSE);
+			$this->db->select('mcb_inventory.inventory_name AS inventory_name' ,FALSE);
+			$this->db->select('mcb_inventory.inventory_unit_price AS inventory_unit_price' ,FALSE);
 			$this->db->select('SUM(mcb_invoice_items.item_price) AS income_amount' ,FALSE);
-			$this->db->select('mcb_inventory_types.inventory_type_id' ,FALSE);
-			$this->db->select('mcb_inventory_types.inventory_type' ,FALSE);
+			$this->db->select('mcb_inventory_types.inventory_type_id AS inventory_type_id' ,FALSE);
+			$this->db->select('mcb_inventory_types.inventory_type AS inventory_type ' ,FALSE);
 			$this->db->select('SUM(mcb_inventory_stock.inventory_stock_quantity) AS inventory_stock_quantity' ,FALSE);
 			//FROM
 			$this->db->from('mcb_inventory');

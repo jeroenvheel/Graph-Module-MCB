@@ -46,7 +46,8 @@
 			<h3 class="title_black"><?php echo $this->lang->line('graph_string'); ?>
 
 			<!-- <input type="submit" name="btn_save_settings" style="float: right; margin-top: 10px; margin-right: 10px;" value="<?php echo $this->lang->line('save_settings'); ?>" /> -->
-			<?php $this->load->view('dashboard/btn_add', array('btn_name'=>'item_Chart', 'btn_value'=>$this->lang->line('graph_btn_item'))); ?>
+			<!-- <?php $this->load->view('dashboard/btn_add', array('btn_name'=>'item_Chart', 'btn_value'=>$this->lang->line('graph_btn_item'))); ?> -->
+			<?php $this->load->view('dashboard/btn_add', array('btn_name'=>'inventory_Chart', 'btn_value'=>$this->lang->line('graph_btn_inventory'))); ?>
 			<?php $this->load->view('dashboard/btn_add', array('btn_name'=>'Bar_Chart', 'btn_value'=>$this->lang->line('graph_btn_bar'))); ?>
 			<?php $this->load->view('dashboard/btn_add', array('btn_name'=>'Line_Chart', 'btn_value'=>$this->lang->line('graph_btn_line'))); ?>
 			</h3>

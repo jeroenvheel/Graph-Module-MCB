@@ -1,6 +1,6 @@
 <?php (defined('BASEPATH')) OR exit('No direct script access allowed');
 
-class Items extends Admin_Controller {
+class Inventory extends Admin_Controller {
 
 	function __construct() {
 
@@ -18,9 +18,9 @@ class Items extends Admin_Controller {
 
 	}
 	function index() {
-	
+
 		$yearselected = $this->mdl_mcb_data->get('graph_setting_year');
-		$data['get'] = $this->mdl_graph->get_items_total_graph($yearselected);
+		$data['get'] = $this->mdl_graph->get_inventory_total_graph($yearselected);
 		$rows = $data['get']->result();
 
 		$full_data = array();
@@ -47,7 +47,7 @@ class Items extends Admin_Controller {
 				//set label name
 				$data_label = $row->inventory_name;
 				//set array data
-				$data[] = array("$val",$row->item_qty);
+				$data[] = array("$val",$row->sold_amount);
 				//set label
 				$array['label'] = $data_label;
 				//set data
@@ -149,7 +149,7 @@ class Items extends Admin_Controller {
 	//set data for ticks
 		foreach($rows as $row){
 			$val = $ticks_num;
-				$data_ticks[] = array("$val",$row->item_name);
+				$data_ticks[] = array("$val",$row->inventory_name);
 				$full_ticks = $data_ticks;
 			$ticks_num++;
 		}
@@ -162,9 +162,9 @@ class Items extends Admin_Controller {
 				//set emty array
 				$data = array();
 				//set label name
-				$data_label = $row->item_name;
+				$data_label = $row->inventory_name;
 				//set array data
-				$data[] = array("$val",$row->item_qty);
+				$data[] = array("$val",$row->sold_amount);
 				//set label
 				$array['label'] = $data_label;
 				//set data
