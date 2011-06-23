@@ -110,7 +110,8 @@
 							return '<div style="font-size:8pt;text-align:center;padding:2px;color:white;">'+label+'<br/>'+Math.round(full.percent)+'%</div>';
 						},
 						background: { 
-							opacity: 0.3 
+							opacity: 0.3 ,
+							color: '#000'
 						}
 					}
 				}
