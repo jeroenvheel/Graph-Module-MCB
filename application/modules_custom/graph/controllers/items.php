@@ -32,7 +32,7 @@ class Items extends Admin_Controller {
 	//set data for ticks
 		foreach($rows as $row){
 			$val = $ticks_num;
-				$data_ticks[] = array("$val",$row->inventory_name);
+				$data_ticks[] = array("$val",$row->item_name);
 				$full_ticks = $data_ticks;
 			$ticks_num++;
 		}
@@ -45,7 +45,7 @@ class Items extends Admin_Controller {
 				//set emty array
 				$data = array();
 				//set label name
-				$data_label = $row->inventory_name;
+				$data_label = $row->item_name;
 				//set array data
 				$data[] = array("$val",$row->item_qty);
 				//set label
