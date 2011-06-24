@@ -196,31 +196,31 @@ class Bar extends Admin_Controller {
 
 				$d1_array['label'] = 'invoice Total';
 				$d1_array['data'] = $d1_data;
-				$d1_array['bars'] = array('show'=>true,'fill'=>true);
+				$d1_array['bars'] = array('show'=>true,'fill'=>true,'barWidth'=>0.6,'align'=>'center');
 
 				$d2_array['label'] = 'invoice Paid';
 				$d2_array['data'] = $d2_data;
-				$d2_array['bars'] = array('show'=>true,'fill'=>true);
+				$d2_array['bars'] = array('show'=>true,'fill'=>true,'barWidth'=>0.6,'align'=>'center');
 
 				$d3_array['label'] = 'invoice Discount';
 				$d3_array['data'] = $d3_data;
-				$d3_array['bars'] = array('show'=>true,'fill'=>true);
+				$d3_array['bars'] = array('show'=>true,'fill'=>true,'barWidth'=>0.6,'align'=>'center');
 
 				$d4_array['label'] = 'invoice Shipping';
 				$d4_array['data'] = $d4_data;
-				$d4_array['bars'] = array('show'=>true,'fill'=>true);
+				$d4_array['bars'] = array('show'=>true,'fill'=>true,'barWidth'=>0.6,'align'=>'center');
 
 				$d5_array['label'] = 'invoice Payment';
 				$d5_array['data'] = $d5_data;
-				$d5_array['bars'] = array('show'=>true,'fill'=>true);
+				$d5_array['bars'] = array('show'=>true,'fill'=>true,'barWidth'=>0.6,'align'=>'center');
 
 				$d6_array['label'] = 'accounts-expense Module';
 				$d6_array['data'] = $d6_data;
-				$d6_array['bars'] = array('show'=>true,'fill'=>true);
+				$d6_array['bars'] = array('show'=>true,'fill'=>true,'barWidth'=>0.6,'align'=>'center');
 
 				$d7_array['label'] = 'contracts Module';
 				$d7_array['data'] = $d7_data;
-				$d7_array['bars'] = array('show'=>true,'fill'=>true);
+				$d7_array['bars'] = array('show'=>true,'fill'=>true,'barWidth'=>0.6,'align'=>'center');
 
 
 				$full_data = array();
